@@ -229,7 +229,7 @@ export const additionalSkills = [
     },
     {
         label: "GitHub",
-        icon: assets.github,
+        icon: assets.gitHub,
         bgColor: "rgba(36, 41, 46, 0.15)",
         shadow: "0 0 20px rgba(36, 41, 46, 0.8)",
         textColor: "#000"
