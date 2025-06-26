@@ -8,7 +8,7 @@ import node from './node.svg'
 import express from './express.svg'
 import mongo from './mongo.svg'
 import git from './git.svg'
-import github from './github.svg'
+import gitHub from './gitHub.svg'
 import hotelBooking from './hotelBooking.webp'
 import foodOrdering from './foodOrdering.webp'
 import authentication from './authentication.webp'
@@ -29,7 +29,7 @@ export const assets = {
     express,
     mongo,
     git,
-    github,
+    gitHub,
     hotelBooking,
     foodOrdering,    
     authentication,
