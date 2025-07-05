@@ -1,4 +1,6 @@
+import nextjs from './nextjs.svg'
 import react from './react.svg'
+import typescript from './typescript.svg'
 import javascript from './javascript.svg'
 import tailwind from './tailwind.svg'
 import bootstrap from './bootstrap.svg'
@@ -19,7 +21,9 @@ import landingPage from './landingPage.webp'
 import weatherApp from './weatherApp.webp'
 
 export const assets = {
+    nextjs,
     react,
+    typescript,
     javascript,
     tailwind,
     bootstrap,
@@ -153,11 +157,25 @@ export const info = [
 
 export const frontendSkills = [
     {
+        label: "Next.js",
+        icon: assets.nextjs,
+        bgColor: "#F2F2F2",
+        shadow: "0 0 20px rgba(255, 255, 255, 0.9)",
+        textColor: "#000"
+    },
+    {
         label: "React",
         icon: assets.react,
         bgColor: "rgba(97, 218, 251, 0.15)",       
         shadow: "0 0 20px rgba(97, 218, 251, 0.8)", 
         textColor: "#61DAFB"                       
+    },
+    {
+        label: "TypeScript",
+        icon: assets.typescript,
+        bgColor: "rgba(49, 120, 198, 0.15)",      
+        shadow: "0 0 20px rgba(49, 120, 198, 0.8)",
+        textColor: "#3178C6"
     },
     {
         label: "JavaScript",
@@ -206,8 +224,8 @@ export const backendSkills = [
     {
         label: "Express Js",
         icon: assets.express,   
-        bgColor: "rgba(50, 50, 50, 0.15)",
-        shadow: "0 0 20px rgba(50, 50, 50, 0.5)",
+        bgColor: "#F2F2F2",
+        shadow: "0 0 20px rgba(255, 255, 255, 0.9)",
         textColor: "#000"
     },
     {
@@ -230,8 +248,8 @@ export const additionalSkills = [
     {
         label: "GitHub",
         icon: assets.gitHub,
-        bgColor: "rgba(36, 41, 46, 0.15)",
-        shadow: "0 0 20px rgba(36, 41, 46, 0.8)",
+        bgColor: "#F2F2F2",
+        shadow: "0 0 20px rgba(255, 255, 255, 0.9)",
         textColor: "#000"
     }
 
