@@ -59,16 +59,16 @@ export const Contact = () => {
                         </div>
                         <div>
                             <h3 className='font-bold'>Phone</h3>
-                            <p>+20 1126820975</p>
+                            <p className='text-sm'>+20 1126820975</p>
                         </div>
                     </div>
-                    <div className='flex items-center gap-4 mb-6'>
+                    <div className='flex items-center gap-4 mb-6 flex-wrap'>
                         <div className='border-1 border-[var(--secondary-color)] rounded-lg p-2'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 text-[var(--secondary-color)]"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
                         </div>
                         <div>
                             <h3 className='font-bold'>Email</h3>
-                            <p className='w-70'>seifsayed121@gmail.com</p>
+                            <p className='text-sm'>seifsayed121@gmail.com</p>
                         </div>
                     </div>
                     <div className='flex items-center gap-4 mb-6'>
@@ -77,7 +77,7 @@ export const Contact = () => {
                         </div>
                         <div>
                             <h3 className='font-bold'>Location</h3>
-                            <p>Giza, Egypt</p>
+                            <p className='text-sm'>Giza, Egypt</p>
                         </div>
                     </div>
                     <div>
