@@ -55,7 +55,7 @@ export const projects = [
         skills: [assets.node, assets.react, assets.javascript, assets.express, assets.mongo, assets.tailwind, assets.css, assets.html],
         github: "https://github.com/seif-el-sayed1/Tech-Zone-E-Commerce-Project",
         link: "https://tech-zone-iota.vercel.app/",
-        demo: ""
+        demo: "https://drive.google.com/file/d/1jPjVoeoPJV59Dvz1lREiKkXNyDNEe1-F/view?usp=drive_link"
     },
     {
         id: 2,
