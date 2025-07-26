@@ -19,6 +19,7 @@ import crudSystem from './crudSystem.webp'
 import dashboard from './dashboard.webp'
 import landingPage from './landingPage.webp'
 import weatherApp from './weatherApp.webp'
+import techZone from './techZone.webp'
 
 export const assets = {
     nextjs,
@@ -41,12 +42,23 @@ export const assets = {
     crudSystem,
     dashboard,
     landingPage,
-    weatherApp
+    weatherApp,
+    techZone
 }
 
 export const projects = [
     {
         id: 1,
+        title: "Tech Zone Project",
+        description: "This project include Google login, JWT-based protected routes, product search and filtering by price and category, a dynamic shopping cart, secure Stripe payment integration, and an admin dashboard for managing products, users, orders, and tracking sales statistics. Fully responsive across all screen sizes.",
+        image: assets.techZone,
+        skills: [assets.node, assets.react, assets.javascript, assets.express, assets.mongo, assets.tailwind, assets.css, assets.html],
+        github: "https://github.com/seif-el-sayed1/Tech-Zone-E-Commerce-Project",
+        link: "https://tech-zone-iota.vercel.app/",
+        demo: ""
+    },
+    {
+        id: 2,
         title: "Hotel Booking App",
         description: "This project includes user authentication with OTP email verification, hotel and room browsing with advanced filtering, secure Stripe payment integration, and a hotel owner dashboard for managing rooms and tracking bookings.",
         image: assets.hotelBooking,
@@ -56,7 +68,7 @@ export const projects = [
         demo: ""
     },
     {
-        id: 2,
+        id: 3,
         title: "Food Ordering App",
         description: "This project includes user authentication, an admin panel for menu and order management, and a user-friendly interface for placing and tracking orders.",
         image: assets.foodOrdering,
@@ -66,7 +78,7 @@ export const projects = [
         demo: "https://drive.google.com/file/d/1eQKkVL4a3iiROa3WdLa8HOySwRmjPHUn/view"
     },
     {
-        id: 3,
+        id: 4,
         title: "Authentication System",
         description: " This project implements a secure user authentication system with JWT, password hashing, reset password and email verification. It includes user registration, login, and profile management features.",
         image: assets.authentication,
@@ -76,7 +88,7 @@ export const projects = [
         demo: "https://drive.google.com/file/d/1p-lKUyuLDfGe_eg07P4Dg4iMIB-rqJFr/view"
     },
     {
-        id: 4,
+        id: 5,
         title: "E-commerce Website",
         description: " This project features a complete e-commerce solution with user authentication, product browsing, and cart management",
         image: assets.eCommerce,
@@ -86,7 +98,7 @@ export const projects = [
         demo: "https://drive.google.com/file/d/1iOfnRHO2fDgg6p4PkND5hmv3frvptE6G/view"
     },
     {
-        id: 5,
+        id: 6,
         title: "CRUD System",
         description: "This project implements a simple CRUD (Create, Read, Update, Delete) system for managing user data with a user-friendly interface.",
         image: assets.crudSystem,
@@ -96,7 +108,7 @@ export const projects = [
         demo: ""
     },
     {
-        id: 6,
+        id: 7,
         title: "Weather App",
         description: "This project fetches real-time weather data from an API and displays it in a user-friendly interface, allowing users to search for weather information by city.",
         image: assets.weatherApp,
@@ -106,7 +118,7 @@ export const projects = [
         demo: ""
     },
     {
-        id: 7,
+        id: 8,
         title: "Dashboard",
         description: "Responsive Dashboard Website Dashboard,Profile,Setting ans Project Sections",
         image: assets.dashboard,
@@ -116,7 +128,7 @@ export const projects = [
         demo: ""
     },
     {
-        id: 8,
+        id: 9,
         title: "Landing Page",
         description: "Responsive Landing Page with HTML and CSS",
         image: assets.landingPage,
