@@ -11,6 +11,7 @@ import express from './express.svg'
 import mongo from './mongo.svg'
 import git from './git.svg'
 import gitHub from './gitHub.svg'
+import python from './python.svg'
 import hotelBooking from './hotelBooking.webp'
 import foodOrdering from './foodOrdering.webp'
 import authentication from './authentication.webp'
@@ -35,6 +36,7 @@ export const assets = {
     mongo,
     git,
     gitHub,
+    python,
     hotelBooking,
     foodOrdering,    
     authentication,
@@ -263,6 +265,13 @@ export const additionalSkills = [
         bgColor: "#F2F2F2",
         shadow: "0 0 20px rgba(255, 255, 255, 0.9)",
         textColor: "#000"
+    },
+    {
+        label: "Python",
+        icon: assets.python,
+        bgColor: "rgba(49, 120, 198, 0.15)",
+        shadow: "0 0 20px rgba(49, 120, 198, 0.8)",
+        textColor: "#3178C6"
     }
 
 ]
