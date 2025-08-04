@@ -37,8 +37,8 @@ export const Home = () => {
                 `}>
                 <div className='flex items-center gap-2 text-lg sm:text-xl px-5 py-2 border-1 border-[var(--secondary-color)] hover:bg-[var(--secondary-color)] rounded-2xl cursor-pointer duration-200'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5"><path strokeLinecap="round" strokeLinejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" /></svg>
-                    <a download={"Seif_El_Sayed_CV.pdf"}
-                        href="https://drive.google.com/uc?export=download&id=10GHQ1-ip38qAWJKGADBL4emDgiLksFTn" >Resume</a>    
+                    <a download={"Seif_El_Sayed_CV.pdf"} target='_blank'
+                        href="https://drive.google.com/file/d/17wD-euySHL_0rnGCVExkhoakzuInO0GU/view?usp=drive_link" >Resume</a>    
                 </div>    
                 <div className='flex items-center gap-2 text-lg text-none wrap sm:text-xl px-5 py-2 border-1 border-[var(--secondary-color)] hover:bg-[var(--secondary-color)] rounded-2xl cursor-pointer duration-200'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5"><path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5"></path><circle cx="13" cy="12" r="2"></circle><path d="M18 19c-2.8 0-5-2.2-5-5v8"></path><circle cx="20" cy="19" r="2"></circle></svg>
