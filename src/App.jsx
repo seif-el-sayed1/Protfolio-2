@@ -13,12 +13,12 @@ import { Toaster } from 'react-hot-toast'
 function App() {
   const { sideBar } = useContext(AppContext)
 
-  useEffect(() => {
-    fetch('https://stadiumeye-backend-b6fq.onrender.com')
-      .then(res => res.json())
-      .then(data => console.log('Response from backend:', data))
-      .catch(err => console.error('Error fetching backend:', err))
-  }, [])
+  // useEffect(() => {
+  //   fetch('https://stadiumeye-backend-b6fq.onrender.com')
+  //     .then(res => res.json())
+  //     .then(data => console.log('Response from backend:', data))
+  //     .catch(err => console.error('Error fetching backend:', err))
+  // }, [])
 
   return (
     <>
