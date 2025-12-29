@@ -17,7 +17,7 @@ export const Projects = () => {
                     className='relative overflow-hidden border border-[var(--secondary-color)] rounded-xl shadow-md flex flex-col'
                 >
                     {project.type && (
-                        <div className="absolute top-0 right-0 w-20 h-20 overflow-hidden z-10 pointer-events-none">
+                        <div className="absolute top-3 left-70 w-20 h-20  z-10 pointer-events-none">
                             <div className="absolute top-3 right-[-26px] w-36 bg-red-600 text-white text-xs font-bold text-center py-2 leading-tight shadow-lg transform rotate-45">
                                 {project.type}
                             </div>
