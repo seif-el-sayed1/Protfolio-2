@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import { Sidebar } from './components/Sidebar'
@@ -11,7 +11,15 @@ import { Contact } from './pages/Contact'
 import { Toaster } from 'react-hot-toast'
 
 function App() {
-  const {sideBar} = useContext(AppContext)
+  const { sideBar } = useContext(AppContext)
+
+  useEffect(() => {
+    fetch('https://stadiumeye-backend-b6fq.onrender.com')
+      .then(res => res.json())
+      .then(data => console.log('Response from backend:', data))
+      .catch(err => console.error('Error fetching backend:', err))
+  }, [])
+
   return (
     <>
       <Toaster
@@ -19,18 +27,16 @@ function App() {
         reverseOrder={false}
       />
       <Navbar />
-          <div className={`flex duration-500 border-1 border-white mt-3 rounded-lg mr-5 md:mx-15  ${sideBar ? "ml-20" : "ml-5"}`}>
-            <Sidebar  />
-            <Routes>
-              <Route path='/' element= {
-                <Home />
-              } /> 
-              <Route path='/skills' element={<Skills />} />
-              <Route path='/projects' element={<Projects />} />
-              <Route path='/aboutMe' element={<AboutMe />} />
-              <Route path='/contact' element={<Contact />} />
-            </Routes>
-          </div>
+      <div className={`flex duration-500 border-1 mb-5 border-white mt-3 rounded-lg mr-5 md:mx-15 ${sideBar ? "ml-20" : "ml-5"}`}>
+        <Sidebar />
+        <Routes>
+          <Route path='/' element={<Home />} /> 
+          <Route path='/skills' element={<Skills />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/aboutMe' element={<AboutMe />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </div>
     </>
   )
 }
