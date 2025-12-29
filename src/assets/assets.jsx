@@ -12,6 +12,8 @@ import mongo from './mongo.svg'
 import git from './git.svg'
 import gitHub from './gitHub.svg'
 import python from './python.svg'
+import jwt from './jwt.svg'
+import firebase from './firebase.svg'
 import hotelBooking from './hotelBooking.webp'
 import foodOrdering from './foodOrdering.webp'
 import authentication from './authentication.webp'
@@ -21,6 +23,9 @@ import dashboard from './dashboard.webp'
 import landingPage from './landingPage.webp'
 import weatherApp from './weatherApp.webp'
 import techZone from './techZone.webp'
+import oneFurever from './oneFurever.webp'
+import greenZone from './greenZone.webp'
+import stadiumEye from './stadiumEye.webp'
 
 export const assets = {
     nextjs,
@@ -37,6 +42,8 @@ export const assets = {
     git,
     gitHub,
     python,
+    jwt,
+    firebase,
     hotelBooking,
     foodOrdering,    
     authentication,
@@ -45,7 +52,10 @@ export const assets = {
     dashboard,
     landingPage,
     weatherApp,
-    techZone
+    techZone,
+    oneFurever,
+    greenZone,
+    stadiumEye
 }
 
 export const projects = [
@@ -132,9 +142,9 @@ export const projects = [
         repoPrivate: false,
         projectPrivate: false,
         inProgress: false,
-        description: "This project implements a secure user authentication system with JWT, password hashing, reset password and email verification. It includes user registration, login, and profile management features.",
+        description: "Secure user authentication system with JWT, password hashing, email verification, and reset password functionality. Includes user registration, login, and profile management.",
         image: assets.authentication,
-        skills: [assets.node, assets.react, assets.javascript, assets.express, assets.mongo, assets.bootstrap, assets.css, assets.html],
+        skills: [assets.node, assets.react, assets.javascript, assets.express, assets.mongo, assets.jwt, assets.bootstrap, assets.css, assets.html],
         github: "https://github.com/seif-el-sayed1/Authentication-System",
         link: "",
         demo: "https://drive.google.com/file/d/1p-lKUyuLDfGe_eg07P4Dg4iMIB-rqJFr/view"
@@ -147,9 +157,9 @@ export const projects = [
         repoPrivate: false,
         projectPrivate: false,
         inProgress: false,
-        description: "This project includes user authentication, an admin panel for menu and order management, and a user-friendly interface for placing and tracking orders.",
+        description: "Full-featured food ordering app with user authentication, admin panel for menu and order management, and a responsive interface for placing and tracking orders.",
         image: assets.foodOrdering,
-        skills: [assets.node, assets.react, assets.javascript, assets.express, assets.mongo, assets.tailwind, assets.css, assets.html],
+        skills: [assets.node, assets.react, assets.javascript, assets.express, assets.mongo, assets.jwt, assets.tailwind, assets.css, assets.html],
         github: "https://github.com/seif-el-sayed1/food-ordering",
         link: "",
         demo: "https://drive.google.com/file/d/1eQKkVL4a3iiROa3WdLa8HOySwRmjPHUn/view"
@@ -162,9 +172,9 @@ export const projects = [
         repoPrivate: false,
         projectPrivate: false,
         inProgress: false,
-        description: "This project includes user authentication with OTP email verification, hotel and room browsing with advanced filtering, secure Stripe payment integration, and a hotel owner dashboard for managing rooms and tracking bookings.",
+        description: "Hotel Booking App is a production-ready full-stack platform with user authentication, JWT-based secure login, OTP email verification, and email notifications to users. Includes room browsing with advanced filters, secure Stripe payment integration, and a dashboard for hotel owners to manage rooms, bookings, and track occupancy efficiently.",
         image: assets.hotelBooking,
-        skills: [assets.node, assets.react, assets.javascript, assets.express, assets.mongo, assets.tailwind, assets.css, assets.html],
+        skills: [assets.node, assets.react, assets.javascript, assets.express, assets.mongo, assets.jwt,  assets.tailwind, assets.css, assets.html],
         github: "https://github.com/seif-el-sayed1/hotel-booking",
         link: "https://hotel-booking-frontend-sage.vercel.app/",
         demo: ""
@@ -177,15 +187,44 @@ export const projects = [
         repoPrivate: false,
         projectPrivate: false,
         inProgress: false,
-        description: "This project include Google login, JWT-based protected routes, product search and filtering by price and category, a dynamic shopping cart, secure Stripe payment integration, and an admin dashboard for managing products, users, orders, and tracking sales statistics. Fully responsive across all screen sizes.",
+        description: "Tech Zone Project is a production-ready full-stack e-commerce platform featuring Google login, JWT-based protected routes, and a dynamic shopping cart. Includes email notifications to users, product search and filtering by price and category, secure Stripe payment integration, and an admin dashboard for managing products, users, and orders while tracking sales statistics. Fully responsive across all screen sizes.",
         image: assets.techZone,
-        skills: [assets.node, assets.react, assets.javascript, assets.express, assets.mongo, assets.tailwind, assets.css, assets.html],
+        skills: [assets.node, assets.react, assets.javascript, assets.express, assets.mongo, assets.jwt, assets.tailwind, assets.css, assets.html],
         github: "https://github.com/seif-el-sayed1/Tech-Zone-E-Commerce-Project",
         link: "https://tech-zone-iota.vercel.app/",
         demo: "https://drive.google.com/file/d/1jPjVoeoPJV59Dvz1lREiKkXNyDNEe1-F/view?usp=drive_link"
-    }
+    },
+    {
+        id: 10,
+        title: "OneFurever Application",
+        type: "Backend",
+        contribution: true,
+        repoPrivate: true,
+        projectPrivate: false,
+        inProgress: false,
+        description: "OneFurever Application is a real-world platform connecting users with adoptable pets, helping manage adoptions and pet data efficiently. Backend system deployed in production with an admin panel for managing users and content. Includes role-based authorization for admins and users, secure JWT authentication, encrypted passwords, password recovery emails, Firebase integration for media storage, and robust REST APIs for seamless data interaction.",
+        image: assets.oneFurever,
+        skills: [assets.node, assets.express, assets.mongo, assets.javascript, assets.jwt, assets.firebase],
+        github: "https://github.com/onefurever/oneFurever-BackEnd.git",
+        link: "PRIVATE",
+        demo: ""
+    },
+    {
+        id: 10,
+        title: "Green Zone",
+        type: "Backend",
+        contribution: true,
+        repoPrivate: true,
+        projectPrivate: true,
+        inProgress: true,
+        description: "Green Zone is a private, client-only Farm Management System designed to manage multiple farms efficiently. Backend system with an admin panel for managing farms, workers, salaries, invoices, returns, and adding admins and engineers. Includes role-based authorization for different user types, secure JWT authentication, encrypted passwords, password recovery emails, Firebase integration for media storage, and robust REST APIs for seamless data interaction.",
+        image: assets.greenZone,
+        skills: [assets.node, assets.express, assets.mongo, assets.javascript, assets.jwt, assets.firebase],
+        github: "https://github.com/kirollosrafik98/GreenZone-BackEnd.git",
+        link: "PRIVATE",
+        demo: ""
+    },
 ];
-
 
 export const aboutMe = [
     {
