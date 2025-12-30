@@ -16,37 +16,59 @@ export const Projects = () => {
                     data-aos="flip-left"
                     className='relative overflow-hidden border border-[var(--secondary-color)] rounded-xl shadow-md flex flex-col'
                 >
+                    {/* Ribbon Type */}
                     {project.type && (
-                        <div className="absolute top-3 left-70 w-20 h-20  z-10 pointer-events-none">
-                            <div className="absolute top-3 right-[-26px] w-36 bg-red-600 text-white text-xs font-bold text-center py-2 leading-tight shadow-lg transform rotate-45">
+                        <div className="absolute top-0 right-0 w-32 h-32 overflow-hidden pointer-events-none">
+                            <div className="
+                                absolute 
+                                z-10
+                                top-10 
+                                right-1
+                                w-48 
+                                bg-red-600 
+                                text-white 
+                                text-xs md:text-sm 
+                                font-bold 
+                                text-center 
+                                py-1.5
+                                shadow-md
+                                rotate-45
+                                translate-x-[30%] 
+                                -translate-y-[10%]
+                            ">
                                 {project.type}
                             </div>
                         </div>
                     )}
 
+                    {/* Contribution Badge */}
                     {project.contribution && (
                         <div className="absolute top-2 left-2 bg-green-500 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-md z-20">
                             🚀 Contribution
                         </div>
                     )}
 
+                    {/* In Progress Badge */}
                     {project.inProgress && (
                         <div className="absolute top-12 left-2 bg-yellow-500 text-white px-3 py-1 rounded-lg text-xs font-bold shadow-md z-20">
                             ⌛ In Progress
                         </div>
                     )}
 
+                    {/* Project Image */}
                     <img
                         className='mb-5 rounded-t-xl h-52 w-full object-cover hover:scale-110 hover:rotate-2 duration-200'
                         src={project.image}
                         alt={project.title}
                     />
 
+                    {/* Project Info */}
                     <div className='mb-5 px-3 flex-1'>
                         <h2 className='mb-2 text-[var(--secondary-color)] text-2xl font-bold'>{project.title}</h2>
                         {project.description && <p className='text-white text-lg'>{project.description}</p>}
                     </div>
 
+                    {/* Skills */}
                     {project.skills.length > 0 && (
                         <div className='px-2 mx-2 mb-5 flex justify-center flex-wrap items-center gap-3 border border-[var(--secondary-color)] rounded-lg py-2'>
                             {project.skills.map((skill, index) => (
@@ -55,6 +77,7 @@ export const Projects = () => {
                         </div>
                     )}
 
+                    {/* Links */}
                     <div className='mb-5 px-2 flex flex-wrap justify-center items-center gap-3'>
                         {/* GitHub Link */}
                         {project.github && (
