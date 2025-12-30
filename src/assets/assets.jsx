@@ -224,6 +224,22 @@ export const projects = [
         link: "PRIVATE",
         demo: ""
     },
+    {
+        id: 13,
+        title: "Stadium Eye",
+        type: "Backend",
+        contribution: false,
+        repoPrivate: true,
+        projectPrivate: false,
+        inProgress: true,
+        // todo: change description
+        description: "Stadium Eye is a private, client-only Stadium Management System designed to manage multiple stadiums efficiently. Backend system with an admin panel for managing stadiums, events, bookings, and staff. Includes role-based authorization for different user types, secure JWT authentication, encrypted passwords, password recovery emails, Firebase integration for media storage, and robust REST APIs for seamless data interaction.    ",
+        image: assets.stadiumEye,
+        skills: [assets.node, assets.express, assets.mongo, assets.javascript, assets.jwt, assets.firebase],
+        github: "https://github.com/seif-el-sayed1/StadiumEye_Backend.git",
+        link: "SOON",   
+        demo: ""
+    },
 ];
 
 export const aboutMe = [
