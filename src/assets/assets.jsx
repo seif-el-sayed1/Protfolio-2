@@ -206,7 +206,7 @@ export const projects = [
         image: assets.oneFurever,
         skills: [assets.node, assets.express, assets.mongo, assets.javascript, assets.jwt, assets.firebase],
         github: "https://github.com/onefurever/oneFurever-BackEnd.git",
-        link: "PRIVATE",
+        link: "https://play.google.com/store/apps/details?id=com.neon.furreverapp",
         demo: ""
     },
     {
