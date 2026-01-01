@@ -7,13 +7,13 @@ import bootstrap from './bootstrap.svg'
 import css from './css.svg'
 import html from './html.svg'
 import node from './node.svg'
-import express from './express.svg'
 import mongo from './mongo.svg'
 import git from './git.svg'
 import gitHub from './gitHub.svg'
 import python from './python.svg'
 import jwt from './jwt.svg'
 import firebase from './firebase.svg'
+import express from './express.png'
 import hotelBooking from './hotelBooking.webp'
 import foodOrdering from './foodOrdering.webp'
 import authentication from './authentication.webp'
@@ -336,11 +336,11 @@ export const backendSkills = [
         textColor: "#539E43"
     },
     {
-        label: "Express Js",
+    label: "Express Js",
         icon: assets.express,   
-        bgColor: "#F2F2F2",
-        shadow: "0 0 20px rgba(255, 255, 255, 0.9)",
-        textColor: "#000"
+        bgColor: "#000000", 
+        shadow: "0 0 20px rgba(0, 0, 0, 0.8)", 
+        textColor: "#FFFFFF" 
     },
     {
         label: "MongoDB",
@@ -348,6 +348,20 @@ export const backendSkills = [
         bgColor: "rgba(69, 161, 73, 0.15)",
         shadow: "0 0 20px rgba(69, 161, 73, 0.8)",
         textColor: "#47A248"    
+    },
+    {
+        label: "JWT",
+        icon: assets.jwt,
+        bgColor: "rgba(255, 206, 84, 0.15)",
+        shadow: "0 0 20px rgba(255, 206, 84, 0.8)",
+        textColor: "#FFCE54"
+    },
+    {
+        label: "Firebase",
+        icon: assets.firebase,
+        bgColor: "rgba(255, 152, 0, 0.15)",
+        shadow: "0 0 20px rgba(255, 152, 0, 0.8)",
+        textColor: "#FF9800"
     }
 ]
 

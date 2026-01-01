@@ -16,9 +16,15 @@ export const Home = () => {
 
     return (
         <div className=' w-full h-fit flex flex-col sm:justify-center items-center mt-5 mx-5 lg:mx-20 text-white'>
-            <div className={`transition-all duration-700 ease-in-out transform ${show ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'}`}>
-                <h1 className='text-2xl sm:text-3xl'>👋 Hi, I’m <span className='text-[var(--secondary-color)] font-bold'>SEIF ElSAYED</span></h1>
-                <p className='text-xl sm:text-2xl mt-3'>Full Stack Developer | <span className='text-[var(--secondary-color)] font-semibold'>MERN Stack</span></p>
+            <div className={`transition-all duration-700 ease-in-out transform ${show ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'} flex flex-col items-center justify-center text-center h-full`}>
+                <h1 className='text-2xl sm:text-3xl'>
+                    👋 Hi, I’m <span className='text-[var(--secondary-color)] font-bold'>SEIF ElSAYED</span>
+                </h1>
+                <p className='text-xl sm:text-2xl mt-3'>
+                    <span className='text-[#FFD700] font-semibold text-3xl sm:text-4xl'>Junior</span> Backend Developer | 
+                    <span className='text-[var(--secondary-color)] font-semibold'> Full-Stack</span>
+                    <span> (MERN)</span>
+                </p>
             </div>
             <ul className='my-5'>
                 {info.map((ele, index) => {
@@ -35,15 +41,27 @@ export const Home = () => {
             <div className={`flex flex-wrap items-center justify-center gap-3 mb-5 transition-all duration-700 ease-in-out transform
                 ${show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
                 `}>
-                <div className='flex items-center gap-2 text-lg sm:text-xl px-5 py-2 border-1 border-[var(--secondary-color)] hover:bg-[var(--secondary-color)] rounded-2xl cursor-pointer duration-200'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5"><path strokeLinecap="round" strokeLinejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" /></svg>
-                    <a download={"Seif_El_Sayed_CV.pdf"} target='_blank'
-                        href="https://drive.google.com/file/d/17wD-euySHL_0rnGCVExkhoakzuInO0GU/view?usp=drive_link" >Resume</a>    
-                </div>    
-                <div className='flex items-center gap-2 text-lg text-none wrap sm:text-xl px-5 py-2 border-1 border-[var(--secondary-color)] hover:bg-[var(--secondary-color)] rounded-2xl cursor-pointer duration-200'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5"><path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5"></path><circle cx="13" cy="12" r="2"></circle><path d="M18 19c-2.8 0-5-2.2-5-5v8"></path><circle cx="20" cy="19" r="2"></circle></svg>
-                    <button onClick={() => navigate("/projects")}>My Projects</button>
-                </div>       
+                <div 
+                    className='flex items-center gap-2 text-lg sm:text-xl px-5 py-2 border-1 border-[var(--secondary-color)] hover:bg-[var(--secondary-color)] rounded-2xl cursor-pointer duration-200'
+                    onClick={() => window.open("https://drive.google.com/file/d/17wD-euySHL_0rnGCVExkhoakzuInO0GU/view?usp=drive_link", "_blank")}
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
+                    </svg>
+                    <span>Resume</span>    
+                </div> 
+                <div 
+                    className='flex items-center gap-2 text-lg sm:text-xl px-5 py-2 border-1 border-[var(--secondary-color)] hover:bg-[var(--secondary-color)] rounded-2xl cursor-pointer duration-200'
+                    onClick={() => navigate("/projects")}
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
+                        <path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5"></path>
+                        <circle cx="13" cy="12" r="2"></circle>
+                        <path d="M18 19c-2.8 0-5-2.2-5-5v8"></path>
+                        <circle cx="20" cy="19" r="2"></circle>
+                    </svg>
+                    <span>My Projects</span>
+                </div>
             </div>
             <div className={`flex items-center gap-3 mb-5 transition-all duration-700 ease-in-out transform
                 ${show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -55,9 +73,15 @@ export const Home = () => {
                     href="https://www.linkedin.com/in/seif-el-sayed-a8452a31a/" target='_blank'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                 </a>
-                <a className='px-4 py-2 border-1 border-[var(--secondary-color)] hover:text-[var(--main-color)] hover:bg-[var(--secondary-color)] rounded-3xl cursor-pointer duration-200'
-                    href="mailto:seifsayed121@gmail.com" target='_blank'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+                <a 
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=seifsayed121@gmail.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className='px-4 py-2 border border-[var(--secondary-color)] hover:text-[var(--main-color)] hover:bg-[var(--secondary-color)] rounded-3xl cursor-pointer duration-200'
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
                 </a>
             </div>
         </div>
