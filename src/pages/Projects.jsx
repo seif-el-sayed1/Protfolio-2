@@ -81,7 +81,7 @@ export const Projects = () => {
                         />
 
                         {/* Project Info */}
-                        <div className='mb-5 px-3 flex-1'>
+                        <div className='mb-5 pl-2 pr-1 flex-1'>
                             <h2 className='mb-2 text-[var(--secondary-color)] text-2xl font-bold'>{project.title}</h2>
                             {project.description && <p className='text-white text-lg'>{project.description}</p>}
                         </div>
