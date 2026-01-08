@@ -59,7 +59,8 @@ export const Contact = () => {
                         </div>
                         <div>
                             <h3 className='font-bold'>Phone</h3>
-                            <p className='text-sm'>+20 1126820975</p>
+                            <p className='text-sm'>+20 1103310796</p>
+                            <p className='text-sm'>+20 1002584289</p>
                         </div>
                     </div>
                     <div className='flex items-center gap-4 mb-6 flex-wrap'>
