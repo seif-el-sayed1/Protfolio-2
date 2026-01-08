@@ -3,3 +3,7 @@
     --main-color: #030921;
     --secondary-color: #0063f5;
 }
+html, body {
+    overflow-x: hidden !important;
+    width: 100%;
+}
