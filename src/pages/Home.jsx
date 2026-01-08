@@ -21,10 +21,11 @@ export const Home = () => {
                     👋 Hi, I’m <span className='text-[var(--secondary-color)] font-bold'>SEIF ElSAYED</span>
                 </h1>
                 <p className='text-xl sm:text-2xl mt-3'>
-                    <span className='text-[#FFD700] font-semibold text-3xl sm:text-4xl'>Junior</span> Backend Developer | 
+                    Junior Backend Developer | 
                     <span className='text-[var(--secondary-color)] font-semibold'> Full-Stack</span>
                     <span> (MERN)</span>
                 </p>
+
             </div>
             <ul className='my-5'>
                 {info.map((ele, index) => {
