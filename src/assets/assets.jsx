@@ -241,7 +241,7 @@ export const projects = [
         skills: [assets.node, assets.express, assets.mongo, assets.javascript, assets.googleCloud, assets.jwt],
         github: "https://github.com/seif-el-sayed1/StadiumEye_Backend.git",
         link: "SOON",   
-        demo: "DEMO"
+        demo: ""
     },
     {
         id: 13,
