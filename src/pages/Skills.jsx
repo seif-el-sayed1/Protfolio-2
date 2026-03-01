@@ -15,9 +15,9 @@ export const Skills = () => {
     return (
         <div className={`px-5 mb-5 w-full ${show ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'} transition-all duration-800 ease-in-out`}>
             <div className='mt-5'>
-                <h2 className='text-[var(--secondary-color)] text-2xl font-bold text-center sm:text-start mb-8'>Frontend Skills :</h2>
+                <h2 className='text-[var(--secondary-color)] text-2xl font-bold text-center sm:text-start mb-8'>Backend Skills :</h2>
                 <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5'>
-                    {frontendSkills.map((skill, index) => {
+                    {backendSkills.map((skill, index) => {
                         return (
                             <div
                                 key={index}
@@ -50,9 +50,9 @@ export const Skills = () => {
                 </div>
             </div>
             <div className='mt-5'>
-                <h2 className='text-[var(--secondary-color)] text-2xl font-bold text-center sm:text-start mb-8'>Backend Skills :</h2>
+                <h2 className='text-[var(--secondary-color)] text-2xl font-bold text-center sm:text-start mb-8'>Frontend Skills :</h2>
                 <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5'>
-                    {backendSkills.map((skill, index) => {
+                    {frontendSkills.map((skill, index) => {
                         return (
                             <div
                                 key={index}
