@@ -15,6 +15,7 @@ import jwt from './jwt.svg'
 import firebase from './firebase.svg'
 import googleCloud from './googleCloud.svg'
 import express from './express.png'
+import socketio from "./socketio.svg"
 import hotelBooking from './hotelBooking.webp'
 import foodOrdering from './foodOrdering.webp'
 import authentication from './authentication.webp'
@@ -46,6 +47,7 @@ export const assets = {
     python,
     jwt,
     firebase,
+    socketio,
     googleCloud,
     hotelBooking,
     foodOrdering,    
@@ -251,9 +253,9 @@ export const projects = [
         repoPrivate: true,
         projectPrivate: false,
         inProgress: true,
-        description: "Backend for a doctor appointment booking system with AI-assisted medical image analysis for patients. Includes JWT-based authentication, role-based authorization, email notifications, Firebase real-time notification system, PDF/Excel report generation, and RESTful APIs with search, filtering, and pagination features.",
+        description: "Backend for a doctor appointment booking system with AI-assisted medical image analysis, real-time chat, and secure video call functionality for patients and doctors. Includes JWT-based authentication, role-based authorization, email notifications, Firebase real-time notification system, PDF/Excel report generation, and RESTful APIs with search, filtering, and pagination features.",
         image: assets.neuronWave,
-        skills: [assets.node, assets.express, assets.mongo, assets.javascript, assets.firebase, assets.jwt],
+        skills: [assets.node, assets.express, assets.mongo, assets.socketio, assets.javascript, assets.firebase, assets.jwt],
         github: "https://github.com/seif-el-sayed1/NeuronWave_Backend.git",
         link: "SOON",   
         demo: ""
@@ -290,25 +292,11 @@ export const info = [
 
 export const frontendSkills = [
     {
-        label: "Next.js",
-        icon: assets.nextjs,
-        bgColor: "#F2F2F2",
-        shadow: "0 0 20px rgba(255, 255, 255, 0.9)",
-        textColor: "#000"
-    },
-    {
         label: "React",
         icon: assets.react,
         bgColor: "rgba(97, 218, 251, 0.15)",       
         shadow: "0 0 20px rgba(97, 218, 251, 0.8)", 
         textColor: "#61DAFB"                       
-    },
-    {
-        label: "TypeScript",
-        icon: assets.typescript,
-        bgColor: "rgba(49, 120, 198, 0.15)",      
-        shadow: "0 0 20px rgba(49, 120, 198, 0.8)",
-        textColor: "#3178C6"
     },
     {
         label: "JavaScript",
@@ -367,6 +355,13 @@ export const backendSkills = [
         bgColor: "rgba(69, 161, 73, 0.15)",
         shadow: "0 0 20px rgba(69, 161, 73, 0.8)",
         textColor: "#47A248"    
+    },
+    {
+        label: "Socket.IO",
+        icon: assets.socketio,
+        bgColor: "rgba(255, 255, 255, 0.9)",
+        shadow: "0 0 20px rgba(0, 0, 0, 0.15)",
+        textColor: "#010101"
     },
     {
         label: "JWT",
