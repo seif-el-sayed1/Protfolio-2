@@ -29,6 +29,7 @@ import oneFurever from './oneFurever.webp'
 import greenZone from './greenZone.webp'
 import stadiumEye from './stadiumEye.webp'
 import neuronWave from './NeuronWave.webp'
+import chatApp from './chatApp.webp'
 
 export const assets = {
     nextjs,
@@ -61,7 +62,8 @@ export const assets = {
     oneFurever,
     greenZone,
     stadiumEye,
-    neuronWave
+    neuronWave,
+    chatApp
 }
 
 export const projects = [
@@ -259,6 +261,21 @@ export const projects = [
         github: "https://github.com/seif-el-sayed1/NeuronWave_Backend.git",
         link: "SOON",   
         demo: ""
+    },
+    {
+        id: 14,
+        title: "Chat App",
+        type: "Full Stack",
+        contribution: false,
+        repoPrivate: false,
+        projectPrivate: false,
+        inProgress: false,
+        description: "Full-stack real-time chat application featuring optimistic UI for instant messaging, a complete message status system (sent, delivered, read), real-time typing indicators, and live user blocking. Supports media uploads with optimistic previews and secure OTP email verification. Built with a scalable architecture and a responsive modern UI.",
+        image: assets.chatApp,
+        skills: [assets.node, assets.express, assets.mongo, assets.socketio, assets.react, assets.tailwind, assets.javascript, assets.firebase, assets.jwt],
+        github: "https://github.com/seif-el-sayed1/SocketIO-ChatApp-Backend",
+        link: "https://chat-me-amber.vercel.app/",   
+        demo: "https://drive.google.com/file/d/1VgwyLVsXeckYUY-6dWpfz4xcr9f1OYys/view?usp=sharing"
     }
 
 ];
